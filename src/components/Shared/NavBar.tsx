@@ -67,7 +67,7 @@ const NavBar = () => {
           </a>
           <div className="h-5 bg-gray-300 w-[1px]" />
           <Select>
-            <SelectTrigger className="w-[50px] h-[20px] bg-transparent outline-none border-0 flex items-center justify-center active:outline-none">
+            <SelectTrigger className="w-auto h-[20px] bg-transparent outline-none border-0 flex items-center justify-center active:outline-none">
               <SelectValue className="text-lg" placeholder="Eng" />
             </SelectTrigger>
             <SelectContent>
@@ -77,7 +77,7 @@ const NavBar = () => {
             </SelectContent>
           </Select>
           <Select>
-            <SelectTrigger className="w-[50px] h-[20px] bg-transparent outline-none border-0 flex items-center justify-center active:outline-none">
+            <SelectTrigger className="w-auto h-[20px] bg-transparent outline-none border-0 flex items-center justify-center active:outline-none">
               <SelectValue className="text-[5px] w-2" placeholder="Usd" />
             </SelectTrigger>
             <SelectContent>
