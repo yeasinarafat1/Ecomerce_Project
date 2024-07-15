@@ -5,10 +5,10 @@ import SubscribeToNewsLater from "@/components/Shared/SubscribeToNewsLater";
 
 export default function Home() {
     return (
-        <>
-            <Hero />
-            <SubscribeToNewsLater />
-            <BestDealSection />
-        </> 
+      <>
+        <Hero />
+        <BestDealSection />
+        <SubscribeToNewsLater />
+      </>
     );
 }
