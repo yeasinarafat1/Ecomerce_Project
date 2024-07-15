@@ -5,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 const TopBar = () => {
   return (
     <div className=" border-0 border-b-[1px] border-gray-400 bg-primary w-full h-[48px] flex items-center justify-around text-white">
-      <p className=" text-[14px] ">Wellcome to cliron online service</p>
+      <p className=" text-[14px] hidden md:flex ">Wellcome to cliron online service</p>
       <div className="flex items-center gap-2">
         <p>Follow us:</p>
         <a href="/">
