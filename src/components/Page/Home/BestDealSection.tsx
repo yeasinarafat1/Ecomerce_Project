@@ -3,9 +3,9 @@ import { BestDealBigOne, BestDeals } from '@/constant';
 import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
-import StarRating from './Shared/StarRatingShow';
-import { Button } from './ui/button';
-import ProductCard from './Shared/ProductCard';
+import StarRating from '../../Shared/StarRatingShow';
+import { Button } from '../../ui/button';
+import ProductCard from '../../Shared/ProductCard';
 
 
 const BestDealSection = () => {

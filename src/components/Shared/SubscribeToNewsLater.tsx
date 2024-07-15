@@ -1,7 +1,7 @@
 import React from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { ArrowBigRight, MoveRight } from "lucide-react";
+import {  MoveRight } from "lucide-react";
 import Image from "next/image";
 
 const SubscribeToNewsLater = () => {
