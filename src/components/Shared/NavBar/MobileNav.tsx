@@ -2,45 +2,51 @@ import { Input } from '@/components/ui/input';
 import Image from 'next/image';
 import React from 'react'
 
-const MiddleBar = () => {
+const MobileMiddleNav = () => {
   return (
-    <div className="hidden bg-primary w-full h-[75px] md:flex items-center justify-around">
+    <div className="md:hidden flex items-center justify-between w-full h-[65px] bg-primary">
       <div className="flex items-center justify-center gap-2">
-        <Image src="asset/icons/logo.svg" alt="Logo" height={48} width={48} />
-        <p className="text-white font-bold text-2xl">CLICON</p>
+        <Image
+          className="size-[25px]"
+          src="asset/icons/logo.svg"
+          alt="Logo"
+          height={40}
+          width={40}
+        />
+        <p className="text-white font-bold text-base">CLICON</p>
       </div>
       <div className="relative">
-        <Input placeholder="Search Anything" className="h-[48px] w-96" />
+        <Input placeholder="Search Anything" className="h-[40px] w-48" />
         <Image
           src="asset/icons/MagnifyingGlass.svg"
           alt="search icon"
-          height={25}
-          width={25}
+          height={20}
+          width={20}
           className="absolute right-1 top-2"
         />
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-3">
         <Image
           src={"asset/icons/ShopingCart.svg"}
           alt="shoping cart"
-          height={32}
-          width={32}
+          height={23}
+          width={23}
         />
         <Image
           src={"asset/icons/Heart.svg"}
           alt="Heart icon"
-          height={32}
-          width={32}
+          height={23}
+          width={23}
         />
         <Image
           src={"asset/icons/User.svg"}
           alt="User icon"
-          height={32}
-          width={32}
+          height={23}
+          width={23}
         />
       </div>
     </div>
   );
 }
 
-export default MiddleBar
+export default MobileMiddleNav
