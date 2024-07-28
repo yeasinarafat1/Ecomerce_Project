@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const SubscribeToNewsLater = () => {
     return (
-        <div className="flex flex-col gap-5 items-center justify-center  w-full h-[450px] bg-primary">
+        <div className="flex flex-col gap-5 items-center justify-center  w-full h-[450px] bg-primary mt-5">
             <p className="text-white text-2xl md:text-3xl font-semibold">
                 Subscribe to our News Later
             </p>
@@ -16,9 +16,10 @@ const SubscribeToNewsLater = () => {
                 ipsum.
             </p>
             <div className="flex gap-2 items-center bg-white w-80 md:w-96 lg:w-[624px] h-[55px] md:h-[65px] rounded-md">
+                {/* fixed some styling to remove the focus ring of the input */}
                 <Input
                     placeholder="Enter your email"
-                    className="flex-1 focus-visible:ring-0  focus-visible:outline-none focus-visible:border-0 focus:outline-none focus:border-0 focus:ring-0 outline-none border-0 bg-transparent"
+                    className="flex-1 !ring-0 !ring-offset-0 border-0 bg-transparent lg:text-lg"
                 />
                 <div className="flex items-center justify-center p-3">
                     <Button className="bg-secondary h-11  hover:bg-orange-500">

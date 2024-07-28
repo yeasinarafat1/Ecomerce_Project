@@ -39,3 +39,35 @@ export const BestDeals = [
     price: 450,
   },
 ];
+export const CatagorisData = [
+  {
+    image: "/asset/DemoPic/DroneDemoPic.png",
+    name: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
+    
+  },
+  {
+    image: "/asset/DemoPic/SmartPhoneDemoPic.png",
+    name: "Simple Mobile 4G LTE Prepaid Smartphone",
+    
+  },
+  {
+    image: "/asset/DemoPic/ControlerDemoPic.png",
+    name: "4K UHD LED Smart TV with Chromecast Built-in",
+    
+  },
+  {
+    image: "/asset/DemoPic/DroneDemoPic.png",
+    name: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
+    
+  },
+  {
+    image: "/asset/DemoPic/SmartPhoneDemoPic.png",
+    name: "Simple Mobile 4G LTE Prepaid Smartphone",
+    
+  },
+  {
+    image: "/asset/DemoPic/ControlerDemoPic.png",
+    name: "4K UHD LED Smart TV with Chromecast Built-in",
+    
+  },
+];

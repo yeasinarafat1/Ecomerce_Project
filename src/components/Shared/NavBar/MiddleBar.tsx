@@ -1,11 +1,12 @@
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const MiddleBar = () => {
     return (
         <div className="hidden bg-primary w-full h-[75px] md:flex items-center justify-around">
-            <div className="flex items-center justify-center gap-2">
+            <Link href={'/'} className="flex items-center justify-center gap-2">
                 <Image
                     src="asset/icons/logo.svg"
                     alt="Logo"
@@ -13,7 +14,7 @@ const MiddleBar = () => {
                     width={48}
                 />
                 <p className="text-white font-bold text-2xl">CLICON</p>
-            </div>
+            </Link>
             <div className="relative">
                 <Input
                     placeholder="Search Anything"
