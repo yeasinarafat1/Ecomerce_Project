@@ -70,3 +70,9 @@
         @apply flex items-center justify-center
     }
 }
+.text-public_sans{
+    font-family: "Public Sans";
+}
+.slick-next:before,.slick-prev:before{
+    font-size: 27px !important;
+}

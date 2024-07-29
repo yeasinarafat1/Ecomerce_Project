@@ -1,5 +1,5 @@
 // its a simple component where you can enter number of star you want to display as prop
-import React from "react";
+
 interface ratingProps {
   rating:number;
   

@@ -3,6 +3,7 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import {  MoveRight } from "lucide-react";
 import Image from "next/image";
+import OrangeButton from "./OrangeButton";
 
 const SubscribeToNewsLater = () => {
     return (
@@ -22,9 +23,7 @@ const SubscribeToNewsLater = () => {
                     className="flex-1 !ring-0 !ring-offset-0 border-0 bg-transparent lg:text-lg"
                 />
                 <div className="flex items-center justify-center p-3">
-                    <Button className="bg-secondary h-11  hover:bg-orange-500">
-                        Subscribe <MoveRight />
-                    </Button>
+                    <OrangeButton>Subscribe</OrangeButton>
                 </div>
             </div>
             <div className="flex items-center justify-center gap-6">

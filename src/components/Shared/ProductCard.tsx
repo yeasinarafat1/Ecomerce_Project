@@ -1,6 +1,7 @@
 // TODO: Add more props so that it can be used in more place
 import Image from 'next/image';
 import React from 'react'
+import StarRating from './StarRatingShow';
 interface ProductCardProps {
     name: string;
     image : string;
@@ -18,13 +19,22 @@ const ProductCard = ({name,image,price,rating,type}:ProductCardProps) => {
       }w-[210px] md:w-[248px] border-[1px] border-[#E4E7E9]`}
     >
       <Image
-        className={`${type === "catagori" && "w-[200px] h-[180px] object-cover"} h-[170px] w-[195px]`}
+        className={`${
+          type === "catagori" && "w-[200px] h-[180px] object-cover"
+        } h-[170px] w-[195px]`}
         src={image}
         alt={name}
         height={188}
         width={216}
       />
-      <p className="text-[12px] md:text-[14px] w-[210px] md:w-[216px]">{name}</p>
+      {rating && (
+        <div className="w-[210px] md:w-[216px]">
+          <StarRating rating={Math.floor(rating)} />
+        </div>
+      )}
+      <p className="text-[12px] md:text-[14px] w-[210px] md:w-[216px]">
+        {name}
+      </p>
       {price && (
         <p className="text-[#2DA5F3] text-[14px] w-[216px]">$ {`${price}`}</p>
       )}
