@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 
 const BestDealLeftBarComponent = () => {
   return (
-    <div className="flex items-center justify-between flex-col gap-3 w-[345px] h-[565px]  border-[#E4E7E9] border-[1px]">
+    <div className="flex items-center justify-between flex-col gap-3 w-full md:w-[345px] h-[565px]  border-[#E4E7E9] border-[1px]">
       <Image
         src={BestDealBigOne.image}
         alt={BestDealBigOne.name}
@@ -22,7 +22,7 @@ const BestDealLeftBarComponent = () => {
         <p className="line-through">${BestDealBigOne.oldPrice}</p>
         <p className="text-xl text-primary">${BestDealBigOne.price}</p>
       </div>
-      <div className="flex w-[280px] items-center gap-2">
+      <div className="flex w-[300px] md:w-[280px] items-center gap-2">
         <div className="flex items-center justify-center size-[48px] bg-[#FFE7D6]">
           <Image
             className="invert"
@@ -32,7 +32,7 @@ const BestDealLeftBarComponent = () => {
             alt="heart"
           />
         </div>
-        <Button className="bg-secondary h-[48px] w-[173px]">
+        <Button className="bg-secondary h-[48px] w-[200px] md:w-[173px]">
           <Image
             className=""
             src={"asset/icons/ShopingCart.svg"}

@@ -9,7 +9,7 @@ import BestDealLeftBarComponent from '@/components/BestDealLeftBarComponent';
 
 const BestDealSection = () => {
   return (
-    <BestDealSectionSkleton leftBar={<BestDealLeftBarComponent />}  rightBarProducts={BestDeals}/>
+    <BestDealSectionSkleton type="bestDeal" leftBar={<BestDealLeftBarComponent />}  rightBarProducts={BestDeals}/>
   );
 }
 

@@ -1,13 +1,12 @@
 import React from "react";
 import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import {  MoveRight } from "lucide-react";
+
 import Image from "next/image";
 import OrangeButton from "./OrangeButton";
 
 const SubscribeToNewsLater = () => {
     return (
-        <div className="flex flex-col gap-5 items-center justify-center  w-full h-[450px] bg-primary mt-5">
+        <div className="flex flex-col gap-5 items-center justify-center  w-full h-[450px] bg-primary mt-0 md:mt-2 lg:mt-5">
             <p className="text-white text-2xl md:text-3xl font-semibold">
                 Subscribe to our News Later
             </p>

@@ -10,6 +10,7 @@ import FeatureProductsLeftBar from "@/components/FeatureProductsLeftBar";
 const FeatureProducts = () => {
   return (
     <BestDealSectionSkleton
+      type="featureProduct"
       leftBar={<FeatureProductsLeftBar />}
       rightBarProducts={featureProducts}
     />

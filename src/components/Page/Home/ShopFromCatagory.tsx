@@ -64,7 +64,7 @@ const ShopFromCatagory = () => {
     ],
   };
   return (
-    <div className="mt-3 container mx-auto">
+    <div className="mt-3 container mx-auto ">
       <h1 className="text-center text-[#191C1F] text-3xl font-semibold mb-3">
         Shop From Catagory
       </h1>
@@ -101,8 +101,8 @@ const NextArrow = (props: any) => {
         ...style,
         display: "block",
         background: "#fa8232",
-        height: "48px",
-        width: "48px",
+        height: "30px",
+        width: "30px",
       }}
       onClick={onClick}
     />
@@ -118,8 +118,8 @@ const PrevArrow = (props: any) => {
         ...style,
         display: "block",
         background: "#fa8232",
-        height: "48px",
-        width: "48px",
+        height: "30px",
+        width: "30px",
       }}
       onClick={onClick}
     />

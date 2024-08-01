@@ -121,3 +121,6 @@ export const featureProducts = [
     price: 800,
   },
 ];
+export const featureProductsNavItems = [
+  'All Product' , 'Smart Phone' , 'Laptop' , 'Tv' , 'Headphone'
+]
