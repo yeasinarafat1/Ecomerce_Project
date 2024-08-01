@@ -66,4 +66,13 @@
     body {
         @apply bg-background text-foreground;
     }
+    .flex-center{
+        @apply flex items-center justify-center
+    }
+}
+.text-public_sans{
+    font-family: "Public Sans";
+}
+.slick-next:before,.slick-prev:before{
+    font-size: 18px !important;
 }

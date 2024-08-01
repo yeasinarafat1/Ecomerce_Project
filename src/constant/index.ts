@@ -39,3 +39,88 @@ export const BestDeals = [
     price: 450,
   },
 ];
+export const CatagorisData = [
+  {
+    image: "/asset/DemoPic/DroneDemoPic.png",
+    name: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
+    
+  },
+  {
+    image: "/asset/DemoPic/SmartPhoneDemoPic.png",
+    name: "Simple Mobile 4G LTE Prepaid Smartphone",
+    
+  },
+  {
+    image: "/asset/DemoPic/ControlerDemoPic.png",
+    name: "4K UHD LED Smart TV with Chromecast Built-in",
+    
+  },
+  {
+    image: "/asset/DemoPic/DroneDemoPic.png",
+    name: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
+    
+  },
+  {
+    image: "/asset/DemoPic/SmartPhoneDemoPic.png",
+    name: "Simple Mobile 4G LTE Prepaid Smartphone",
+    
+  },
+  {
+    image: "/asset/DemoPic/ControlerDemoPic.png",
+    name: "4K UHD LED Smart TV with Chromecast Built-in",
+    
+  },
+];
+export const featureProducts = [
+  {
+    name: "Wired Over-Ear Gaming Headphones with USB",
+    image: "/asset/DemoPic/gaming_headphone.png",
+    rating: 5,
+    price: 80,
+  },
+  {
+    name: "Samsung Electronics Samsung Galexy S21 5G",
+    image: "/asset/DemoPic/SmartPhoneDemoPic.png",
+    rating: 4,
+    price: 600,
+  },
+  {
+    name: "4K UHD LED Smart TV with Chromecast Built-in",
+    image: "/asset/DemoPic/smart_tv.png",
+    rating: 4,
+    price: 800,
+  },
+  {
+    name: "walton air conditioner",
+    image: "/asset/DemoPic/air_conditioner.png",
+    rating: 4,
+    price: 500,
+  },
+  {
+    image: "/asset/DemoPic/DroneDemoPic.png",
+    name: "Wired Over-Ear Gaming Headphones with USB",
+    price: 690,
+    rating: 5,
+  },
+  {
+    name: "Wired Over-Ear Gaming Headphones with USB",
+    image: "/asset/DemoPic/gaming_headphone.png",
+    rating: 5,
+    price: 80,
+  },
+  {
+    name: "Samsung Electronics Samsung Galexy S21 5G",
+    image: "/asset/DemoPic/SmartPhoneDemoPic.png",
+    rating: 4,
+    price: 600,
+  },
+  {
+    name: "4K UHD LED Smart TV with Chromecast Built-in",
+    image: "/asset/DemoPic/smart_tv.png",
+    rating: 4,
+    price: 800,
+  },
+];
+export const featureProductsNavItems = [
+  'All Product' , 'Smart Phone' , 'Laptop' , 'Tv' , 'Headphone'
+]
