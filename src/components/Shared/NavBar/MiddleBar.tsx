@@ -25,7 +25,7 @@ const MiddleBar = () => {
                     alt="search icon"
                     height={25}
                     width={25}
-                    className="absolute right-1 top-2"
+                    className="absolute right-2 top-3"
                 />
             </div>
             <div className="flex items-center justify-center gap-2">
