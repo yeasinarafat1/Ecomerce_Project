@@ -6,6 +6,7 @@ import {
 import { Cross, X } from "lucide-react";
 import Image from "next/image";
 import OrangeButton from "./Shared/OrangeButton";
+import Link from "next/link";
 
 const ProoductCartPopOver = () => {
     const cartItemNumber = 2;
@@ -50,9 +51,11 @@ const ProoductCartPopOver = () => {
         <OrangeButton className="w-full mt-2 hover:bg-transparent border-[2px] hover:border-secondary hover:text-secondary">
           Checkout
         </OrangeButton>
-        <OrangeButton className="w-full mt-2 bg-transparent border-[2px] border-secondary text-secondary hover:text-white">
-          Checkout
-        </OrangeButton>
+        <Link href={"/shopingcart"}>
+          <OrangeButton className="w-full mt-2 bg-transparent border-[2px] border-secondary text-secondary hover:text-white">
+            Veiw All
+          </OrangeButton>
+        </Link>
       </PopoverContent>
     </Popover>
   );

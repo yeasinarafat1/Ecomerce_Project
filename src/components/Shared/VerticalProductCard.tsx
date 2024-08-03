@@ -6,7 +6,7 @@ interface props {
 }
 const VerticalProductCard = ({img,name}:props) => {
   return (
-    <div className="flex items-center w-[575px] h-[72px]">
+    <div className="flex items-center w-full h-[72px]">
       <Image src={img} width={72} height={72} alt={name} />
       <p className="text-[#475156] w-[420px]">{name}</p>
     </div>

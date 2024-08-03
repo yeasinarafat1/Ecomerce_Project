@@ -32,10 +32,7 @@ const WhishList = () => {
             return (
               <TableRow key={index}>
                 <TableCell className="font-medium">
-                  <VerticalProductCard
-                    name={item.name}
-                    img={item.image}
-                  />
+                  <VerticalProductCard name={item.name} img={item.image} />
                 </TableCell>
                 <TableCell className="text-[#191C1F] text-sm font-semibold">
                   ${item.price}
@@ -49,8 +46,13 @@ const WhishList = () => {
                   {item.instock ? " In stock" : "out of stock"}
                 </TableCell>
                 <TableCell className="flex items-center  gap-2 w-[250px]">
-                  <OrangeButton>Add to cart <ShoppingCart /></OrangeButton>
-                  <X  className="cursor-pointer text-gray-700"/>
+                  <OrangeButton
+                    disable={!item.instock}
+                    className={cn(!item.instock && "bg-[#ADB7BC]")}
+                  >
+                    Add to cart <ShoppingCart />
+                  </OrangeButton>
+                  <X className="cursor-pointer text-gray-700" />
                 </TableCell>
               </TableRow>
             );
