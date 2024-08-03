@@ -7,6 +7,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "../ui/select";
+import { GiUsaFlag } from "react-icons/gi";
 
 const TopBar = () => {
     return (
@@ -70,9 +71,9 @@ const TopBar = () => {
               <SelectValue className="text-lg" placeholder="Eng" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="light">Light</SelectItem>
-              <SelectItem value="dark">Dark</SelectItem>
-              <SelectItem value="system">System</SelectItem>
+              <SelectItem value="eng">Eng</SelectItem>
+              <SelectItem value="bn">Bn</SelectItem>
+              
             </SelectContent>
           </Select>
           <Select>
@@ -80,9 +81,9 @@ const TopBar = () => {
               <SelectValue className="text-[5px] w-2" placeholder="Usd" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="light">Light</SelectItem>
-              <SelectItem value="dark">Dark</SelectItem>
-              <SelectItem value="system">System</SelectItem>
+              <SelectItem value="Usd">Usd</SelectItem>
+              <SelectItem value="Bdt">Bdt</SelectItem>
+              
             </SelectContent>
           </Select>
         </div>

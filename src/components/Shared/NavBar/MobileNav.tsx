@@ -1,3 +1,4 @@
+import ProoductCartPopOver from "@/components/ProoductCartPopOver";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ const MobileMiddleNav = () => {
     return (
       <>
         <div className="md:hidden flex items-center justify-around w-full h-[65px] bg-primary">
-          <Link href={'/'} className="flex items-center justify-center gap-2">
+          <Link href={"/"} className="flex items-center justify-center gap-2">
             <Image
               className="size-[35px]"
               src="asset/icons/logo.svg"
@@ -19,18 +20,15 @@ const MobileMiddleNav = () => {
           </Link>
 
           <div className="flex items-center justify-center gap-3">
-            <Image
-              src={"asset/icons/ShopingCart.svg"}
-              alt="shoping cart"
-              height={30}
-              width={30}
-            />
-            <Image
-              src={"asset/icons/Heart.svg"}
-              alt="Heart icon"
-              height={30}
-              width={30}
-            />
+           <ProoductCartPopOver />
+            <Link href={'/whishlist'}>
+              <Image
+                src={"asset/icons/Heart.svg"}
+                alt="Heart icon"
+                height={30}
+                width={30}
+              />
+            </Link>
             <Image
               src={"asset/icons/User.svg"}
               alt="User icon"
