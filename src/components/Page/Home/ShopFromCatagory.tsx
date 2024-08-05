@@ -20,7 +20,7 @@ const ShopFromCatagory = () => {
     responsive: [
       //**Responsive breakpoint so that it looks good on every device */
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
@@ -29,9 +29,18 @@ const ShopFromCatagory = () => {
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -55,7 +64,7 @@ const ShopFromCatagory = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 359,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -64,7 +73,7 @@ const ShopFromCatagory = () => {
     ],
   };
   return (
-    <div className="mt-3 container mx-auto ">
+    <div className="mt-3 w-full md:container mx-auto ">
       <h1 className="text-center text-[#191C1F] text-3xl font-semibold mb-3">
         Shop From Catagory
       </h1>
@@ -96,10 +105,10 @@ const NextArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} size-[48px] rounded-full !flex items-center justify-center`}
+      className={`${className} hidden  size-[48px] rounded-full sm:!flex items-center justify-center mr-5 md:mr-0`}
       style={{
         ...style,
-        display: "block",
+        display:"none",
         background: "#fa8232",
         height: "30px",
         width: "30px",
@@ -113,10 +122,10 @@ const PrevArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} size-[48px] rounded-full !flex items-center justify-center z-10`}
+      className={`${className} size-[48px] rounded-full sm:!flex items-center justify-center z-10 ml-5 md:mr-0`}
       style={{
         ...style,
-        display: "block",
+        display: "none",
         background: "#fa8232",
         height: "30px",
         width: "30px",

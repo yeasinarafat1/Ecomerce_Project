@@ -13,7 +13,7 @@ const BigShowCaseProductCard = ({name,desc,productsImg,type}:props) => {
   const backgroundcolor = type === "left" ? "#F2F4F5" : "#191C1F";
   return (
     <div
-      className={`pl-1 md:pl-0 w-[100vw] md:w-[640px] bg-[${backgroundcolor}] h-[330px] flex  justify-center items-center gap-4  rounded-md mt-3`}
+      className={`pl-1 md:pl-0 w-[100vw] md:w-[640px] bg-[${backgroundcolor}] h-[330px] flex  justify-center items-center gap-4  rounded-md mt-5`}
     >
       <div className="flex  justify-center flex-col gap-3 w-[280px]">
         <Button

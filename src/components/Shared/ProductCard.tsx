@@ -14,7 +14,7 @@ const ProductCard = ({name,image,price,rating,type}:ProductCardProps) => {
     //** this card can be used in verius purpose like it can be used in best deal section or it can be used as catagory card and many more
   return (
     <div
-      className={`flex flex-col py-1 items-center justify-center gap-y-2  w-[183px] md:w-[248px] border-[1px] border-[#E4E7E9]`}
+      className={` cursor-pointer flex flex-col py-1 items-center justify-center gap-y-2  w-[175px] md:w-[248px] border-[1px] border-[#E4E7E9]`}
     >
       <Image
         className={`${
@@ -26,15 +26,15 @@ const ProductCard = ({name,image,price,rating,type}:ProductCardProps) => {
         width={216}
       />
       {rating && (
-        <div className="w-[180px] md:w-[216px]">
+        <div className="w-[175px] md:w-[216px]">
           <StarRating rating={Math.floor(rating as number)} />
         </div>
       )}
-      <p className="text-[12px] md:text-[14px] w-[180px] md:w-[216px] h-[36px] line-clamp-2">
+      <p className="text-[12px] md:text-[14px] w-[175px] md:w-[216px] h-[36px] line-clamp-2">
         {name}
       </p>
       {price && (
-        <p className="text-[#2DA5F3] text-[12px] w-[180px] md:w-[216px]">$ {`${price}`}</p>
+        <p className="text-[#2DA5F3] text-[12px] w-[175px] md:w-[216px]">$ {`${price}`}</p>
       )}
     </div>
   );
