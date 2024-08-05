@@ -16,7 +16,7 @@ const FeatureProducts = () => {
         <FeatureProductsLeftBar />
         <div className="w-full">
           <FeatureProductNavBar  />
-          <div className="w-full md:w-auto flex justify-center md:justify-start items-center flex-wrap gap-1 md:gap-3 ">
+          <div className=" w-full md:w-auto flex justify-evenly md:justify-start items-center flex-wrap gap-y-2  md:gap-3 ">
             {/**  here rightBarProducts is a constant in future when  we will have real Product then we will update it  */}
             {featureProducts.map((item, index) => {
               return (

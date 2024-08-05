@@ -22,7 +22,7 @@ const page = () => {
         <Table>
           <TableHeader className="bg-gray-[#475156] uppercase ">
             <TableRow className="bg-[#F2F4F5] h-6">
-              <TableHead className="w-[330px] h-[40px]">Products</TableHead>
+              <TableHead className="md:w-[260px] lg:w-[330px] h-[40px] p-2">Products</TableHead>
               <TableHead>Price</TableHead>
               <TableHead>Quantity</TableHead>
               <TableHead className="w-[100px]">Sub total</TableHead>
@@ -42,19 +42,19 @@ const page = () => {
           <h3 className="text-[#191C1F] text-lg font-semibold">Totals</h3>
           <div className="flex items-center justify-between">
             <p className="text-[#5F6C72] text-sm">Sub Total</p>
-            <p className="text-[#191C1F] text-sm font-semibold">$300</p>
+            <p className="text-[#191C1F] text-sm font-medium">$300</p>
           </div>
           <div className="flex items-center justify-between">
             <p className="text-[#5F6C72] text-sm">Shipping</p>
-            <p className="text-[#191C1F] text-sm font-semibold">$300</p>
+            <p className="text-[#191C1F] text-sm font-medium">$300</p>
           </div>
           <div className="flex items-center justify-between">
             <p className="text-[#5F6C72] text-sm">Discounts</p>
-            <p className="text-[#191C1F] text-sm font-semibold">$300</p>
+            <p className="text-[#191C1F] text-sm font-medium">$300</p>
           </div>
           <div className="flex items-center justify-between">
             <p className="text-[#5F6C72] text-sm">Tax</p>
-            <p className="text-[#191C1F] text-sm font-semibold">$300</p>
+            <p className="text-[#191C1F] text-sm font-medium">$300</p>
           </div>
           <Separator />
           <div className="flex items-center justify-between">

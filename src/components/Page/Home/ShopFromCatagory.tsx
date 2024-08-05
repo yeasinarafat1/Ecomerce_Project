@@ -64,7 +64,7 @@ const ShopFromCatagory = () => {
         },
       },
       {
-        breakpoint: 374,
+        breakpoint: 359,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -105,10 +105,10 @@ const NextArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} size-[48px] rounded-full !flex items-center justify-center mr-5 md:mr-0`}
+      className={`${className} hidden  size-[48px] rounded-full sm:!flex items-center justify-center mr-5 md:mr-0`}
       style={{
         ...style,
-        display: "block",
+        display:"none",
         background: "#fa8232",
         height: "30px",
         width: "30px",
@@ -122,10 +122,10 @@ const PrevArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} size-[48px] rounded-full !flex items-center justify-center z-10 ml-5 md:mr-0`}
+      className={`${className} size-[48px] rounded-full sm:!flex items-center justify-center z-10 ml-5 md:mr-0`}
       style={{
         ...style,
-        display: "block",
+        display: "none",
         background: "#fa8232",
         height: "30px",
         width: "30px",
