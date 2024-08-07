@@ -17,7 +17,7 @@ const ProoductCartPopOver = () => {
           {cartItemNumber}
         </div>
         <Image
-          src={"asset/icons/ShopingCart.svg"}
+          src={"/asset/icons/ShopingCart.svg"}
           alt="shoping cart"
           height={32}
           width={32}

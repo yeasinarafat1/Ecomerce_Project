@@ -23,7 +23,7 @@ const BottomBar = () => {
         <div className="flex justify-center items-center gap-2">
           <Image
             className="size-[16px] md:size-[24px]"
-            src={"asset/icons/MapPinLine.svg"}
+            src={"/asset/icons/MapPinLine.svg"}
             height={24}
             width={24}
             alt="map logo"
@@ -35,7 +35,7 @@ const BottomBar = () => {
         <div className="flex justify-center items-center gap-2">
           <Image
             className="size-[16px] md:size-[24px]"
-            src={"asset/icons/ArrowsCounterClockwise.svg"}
+            src={"/asset/icons/ArrowsCounterClockwise.svg"}
             height={24}
             width={24}
             alt="map logo"
@@ -45,7 +45,7 @@ const BottomBar = () => {
         <div className="flex justify-center items-center gap-2">
           <Image
             className="size-[16px] md:size-[24px]"
-            src={"asset/icons/Headphones.svg"}
+            src={"/asset/icons/Headphones.svg"}
             height={24}
             width={24}
             alt="map logo"
@@ -57,7 +57,7 @@ const BottomBar = () => {
         <div className="flex justify-center items-center gap-2">
           <Image
             className="size-[16px] md:size-[24px]"
-            src={"asset/icons/Info.svg"}
+            src={"/asset/icons/Info.svg"}
             height={24}
             width={24}
             alt="map logo"

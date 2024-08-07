@@ -11,7 +11,7 @@ const MobileMiddleNav = () => {
           <Link href={"/"} className="flex items-center justify-center gap-2">
             <Image
               className="size-[35px]"
-              src="asset/icons/logo.svg"
+              src="/asset/icons/logo.svg"
               alt="Logo"
               height={60}
               width={60}
@@ -23,14 +23,14 @@ const MobileMiddleNav = () => {
            <ProoductCartPopOver />
             <Link href={'/whishlist'}>
               <Image
-                src={"asset/icons/Heart.svg"}
+                src={"/asset/icons/Heart.svg"}
                 alt="Heart icon"
                 height={30}
                 width={30}
               />
             </Link>
             <Image
-              src={"asset/icons/User.svg"}
+              src={"/asset/icons/User.svg"}
               alt="User icon"
               height={30}
               width={30}
@@ -41,7 +41,7 @@ const MobileMiddleNav = () => {
           <div className="relative w-[96vw]">
             <Input placeholder="Search Anything" className="h-[40px] w-full" />
             <Image
-              src="asset/icons/MagnifyingGlass.svg"
+              src="/asset/icons/MagnifyingGlass.svg"
               alt="search icon"
               height={30}
               width={30}
