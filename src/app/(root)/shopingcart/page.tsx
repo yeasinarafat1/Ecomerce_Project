@@ -19,11 +19,11 @@ const page = () => {
     <div className=" w-full md:container mx-auto my-6 flex flex-col  gap-6 md:flex-row">
       <div className="flex flex-col gap-2 border border-gray-200 rounded-md">
         <h2>Shoping Cart</h2>
-        <Table>
+        <Table className="hidden md:block">
           <TableHeader className="bg-gray-[#475156] uppercase ">
             <TableRow className="bg-[#F2F4F5] h-6">
-              <TableHead className="md:w-[260px] lg:w-[330px] h-[40px] p-2">Products</TableHead>
-              <TableHead>Price</TableHead>
+              <TableHead className="md:w-[260px] lg:w-[290px] xl:w-[330px] h-[40px] p-0 lg:p-2">Products</TableHead>
+              <TableHead >Price</TableHead>
               <TableHead>Quantity</TableHead>
               <TableHead className="w-[100px]">Sub total</TableHead>
             </TableRow>
@@ -38,7 +38,7 @@ const page = () => {
         </Table>
       </div>
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col gap-5 border px-3 pt-3 border-gray-200 rounded-md w-[425px] h-[340px]">
+        <div className="flex flex-col gap-5 border px-3 pt-3 border-gray-200 rounded-md w-full md:w-[250px] lg:w-[380px] h-[340px]">
           <h3 className="text-[#191C1F] text-lg font-semibold">Totals</h3>
           <div className="flex items-center justify-between">
             <p className="text-[#5F6C72] text-sm">Sub Total</p>
