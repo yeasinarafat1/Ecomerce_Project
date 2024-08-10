@@ -10,7 +10,7 @@ const sans = Public_Sans({ subsets: ["latin"] });
 export default function Hero() {
     return (
         <>
-            <div className="my-5 md:my-7 container mx-auto grid grid-cols-1 md:grid-cols-10 gap-4">
+            <div className="my-5 md:my-7 container mx-auto grid grid-cols-1 md:grid-cols-10 gap-4 -z-0">
                 {/* Slider part */}
                 <div className="border border-red-500 md:col-span-6 p-11 md:p-12 lg:p-14 bg-[#F2F4F5] rounded-[6px]">
                     {/* Slider is here */}
@@ -19,7 +19,7 @@ export default function Hero() {
                             dynamicBullets: true,
                         }}
                         autoplay={{
-                            delay: 2000,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         modules={[Pagination, Autoplay]}

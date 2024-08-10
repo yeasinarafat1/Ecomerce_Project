@@ -2,40 +2,19 @@ import OrangeButton from "@/components/Shared/OrangeButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+
 import { cartItemConstant } from "@/constant";
-import CartRow from "./CartRow";
+
+import MobileCartItem from "./MobileCartsItem";
+import CartTable from "./CartTable";
 
 const page = () => {
   return (
     <div className=" w-full md:container mx-auto my-6 flex flex-col  gap-6 md:flex-row">
       <div className="flex flex-col gap-2 border border-gray-200 rounded-md">
         <h2>Shoping Cart</h2>
-        <Table className="hidden md:block">
-          <TableHeader className="bg-gray-[#475156] uppercase ">
-            <TableRow className="bg-[#F2F4F5] h-6">
-              <TableHead className="md:w-[260px] lg:w-[290px] xl:w-[330px] h-[40px] p-0 lg:p-2">Products</TableHead>
-              <TableHead >Price</TableHead>
-              <TableHead>Quantity</TableHead>
-              <TableHead className="w-[100px]">Sub total</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {cartItemConstant.map((item,index) => { 
-                return (
-                    <CartRow key={index} name={item.name} price={item.price} initialQuantity={item.quantity} img={item.image}/>
-                )
-             })}
-          </TableBody>
-        </Table>
+        <CartTable CartItems={cartItemConstant}/>
+        <MobileCartItem CartItems={cartItemConstant}/>
       </div>
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-5 border px-3 pt-3 border-gray-200 rounded-md w-full md:w-[250px] lg:w-[380px] h-[340px]">

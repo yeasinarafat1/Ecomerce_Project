@@ -76,3 +76,6 @@
 .slick-next:before,.slick-prev:before{
     font-size: 18px !important;
 }
+.aboutusBannerBg{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.00) 67.86%), url('/asset/banner/aboutUsBanner.jpeg') lightgray 50% / cover no-repeat;
+}

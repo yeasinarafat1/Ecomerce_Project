@@ -32,6 +32,14 @@ const config = {
           DEFAULT: "#FA8232",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        gray: {
+          '50':'#F2F4F5',
+          '100':'#E4E7E9',
+          '300':'#ADB7BC',
+          '600':'#5F6C72',
+          '700':'#475156',
+          "900": "#191C1F",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

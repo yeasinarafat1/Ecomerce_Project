@@ -43,32 +43,26 @@ export const CatagorisData = [
   {
     image: "/asset/DemoPic/DroneDemoPic.png",
     name: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
-    
   },
   {
     image: "/asset/DemoPic/SmartPhoneDemoPic.png",
     name: "Simple Mobile 4G LTE Prepaid Smartphone",
-    
   },
   {
     image: "/asset/DemoPic/ControlerDemoPic.png",
     name: "4K UHD LED Smart TV with Chromecast Built-in",
-    
   },
   {
     image: "/asset/DemoPic/DroneDemoPic.png",
     name: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
-    
   },
   {
     image: "/asset/DemoPic/SmartPhoneDemoPic.png",
     name: "Simple Mobile 4G LTE Prepaid Smartphone",
-    
   },
   {
     image: "/asset/DemoPic/ControlerDemoPic.png",
     name: "4K UHD LED Smart TV with Chromecast Built-in",
-    
   },
 ];
 export const featureProducts = [
@@ -122,8 +116,12 @@ export const featureProducts = [
   },
 ];
 export const featureProductsNavItems = [
-  'All Product' , 'Smart Phone' , 'Laptop' , 'Tv' , 'Headphone'
-]
+  "All Product",
+  "Smart Phone",
+  "Laptop",
+  "Tv",
+  "Headphone",
+];
 export const whishListConstant = [
   {
     name: "Wired Over-Ear Gaming Headphones with USB",
@@ -198,5 +196,66 @@ export const cartItemConstant = [
     image: "/asset/DemoPic/gaming_headphone.png",
     quantity: 1,
     price: 80,
+  },
+];
+export const aboutUsFeatures = [
+  "Great 24/7 customer services.",
+  "600+ Dedicated employe.",
+  "50+ Branches all over the world.",
+  "Over 1 Million Electronics Products",
+];
+export const CatagoriList = [
+  "computer and laptop",
+  "computer and accecories",
+  "SmartPhone ",
+  "Headphone",
+  "Mobile Accecories",
+  "Gaming Console",
+  "Camara and Photo",
+  "Tv and Home Applience",
+  "Watch and Accessories",
+  "Gps and Navigation",
+  "Wearable Technology"
+];
+export const contributorlist = [
+  {
+    name: "Kevin Gilbert",
+    title: "Chief Executive Officer",
+    img: "/asset/conributorDemoPic/pic1.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Assistant of CEO",
+    img: "/asset/conributorDemoPic/pic2.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Head of Designer",
+    img: "/asset/conributorDemoPic/pic3.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Head of Designer",
+    img: "/asset/conributorDemoPic/pic4.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Head of Designer",
+    img: "/asset/conributorDemoPic/pic5.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Head of Designer",
+    img: "/asset/conributorDemoPic/pic6.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Chief Executive Officer",
+    img: "/asset/conributorDemoPic/pic1.png",
+  },
+  {
+    name: "Kevin Gilbert",
+    title: "Assistant of CEO",
+    img: "/asset/conributorDemoPic/pic2.png",
   },
 ];

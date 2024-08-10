@@ -63,7 +63,7 @@ const ProoductCartPopOver = () => {
 };
 
 export default ProoductCartPopOver;
-const CartProductCard = ({img,name,price}:{
+export const CartProductCard = ({img,name,price}:{
     img:string,
     name:string,
     price:number
