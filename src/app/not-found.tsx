@@ -2,13 +2,13 @@
 import Footer from "@/components/Shared/Footer";
 import NavBar from "@/components/Shared/NavBar/NavBar";
 import { Button } from "@/components/ui/button";
-import { ArrowBigLeft, MoveLeft } from "lucide-react";
+import {  MoveLeft } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, } from "next/navigation";
 
 const NotFound = ()=> {
 const router = useRouter()
+
   
   return (
     <div className="overflow-x-hidden">

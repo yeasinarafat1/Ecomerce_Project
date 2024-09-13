@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex flex-col gap-5  h-[295px]">
                 <div className="flex gap-3 items-center ">
                     <Image
-                        src={"asset/icons/Logo.svg"}
+                        src={"/asset/icons/Logo.svg"}
                         alt="Logo"
                         height={48}
                         width={48}
@@ -37,7 +37,7 @@ const Footer = () => {
                 <div className="flex gap-2 cursor-pointer">
                     <p className="text-[#EBC80C]">Browse all Product</p>
                     <Image
-                        src={"asset/icons/ArrowRight.svg"}
+                        src={"/asset/icons/ArrowRight.svg"}
                         alt="arrow"
                         height={20}
                         width={20}
@@ -64,7 +64,7 @@ const Footer = () => {
                 </p>
                 <div className="bg-[#303639] h-[69px] w-[175px] flex items-center justify-center gap-3 rounded-md">
                     <Image
-                        src={"asset/icons/playStoreLogo.svg"}
+                        src={"/asset/icons/playStoreLogo.svg"}
                         alt="playlogo"
                         height={32}
                         width={32}
@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
                 <div className="bg-[#303639] h-[69px] w-[175px] flex items-center justify-center gap-3 rounded-md">
                     <Image
-                        src={"asset/icons/appleAppStoreLogo.svg"}
+                        src={"/asset/icons/appleAppStoreLogo.svg"}
                         alt="playlogo"
                         height={32}
                         width={32}

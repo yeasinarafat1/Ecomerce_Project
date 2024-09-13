@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Fragment } from "react";
 //** react-slick is package to use slider card */
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { CatagorisData } from "@/constant";
 import ProductCard from "@/components/Shared/ProductCard";
+import { Divide } from "lucide-react";
+import Image from "next/image";
 const ShopFromCatagory = () => {
   const settings = {
     dots: true,
@@ -58,7 +60,7 @@ const ShopFromCatagory = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -66,7 +68,7 @@ const ShopFromCatagory = () => {
       {
         breakpoint: 359,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -85,12 +87,15 @@ const ShopFromCatagory = () => {
           CatagorisData.map((item, index) => {
             return (
               //**Here I am reusing existing product card */
-              <ProductCard
-                key={index}
-                name={item.name}
-                image={item.image}
-                type="catagori"
-              />
+              <Fragment key={index}>
+                <ProductCard
+                  name={item.name}
+                  image={item.image}
+                  type="catagori"
+                  className="hidden md:flex"
+                />
+                <CatagoryCardMobile name={item.name} image={item.image} />
+              </Fragment>
             );
           })
         }
@@ -108,7 +113,7 @@ const NextArrow = (props: any) => {
       className={`${className} hidden  size-[48px] rounded-full sm:!flex items-center justify-center mr-5 md:mr-0`}
       style={{
         ...style,
-        display:"none",
+        display: "none",
         background: "#fa8232",
         height: "30px",
         width: "30px",
@@ -132,5 +137,24 @@ const PrevArrow = (props: any) => {
       }}
       onClick={onClick}
     />
+  );
+};
+export const CatagoryCardMobile = ({
+  name,
+  image,
+}: {
+  name: string;
+  image: string;
+}) => {
+  return (
+    <div className="size-[85px] rounded-full border border-primary-500 flex-center md:hidden">
+      <Image
+        src={image}
+        width={85}
+        height={85}
+        alt={name}
+        className="rounded-full object-cover"
+      />
+    </div>
   );
 };

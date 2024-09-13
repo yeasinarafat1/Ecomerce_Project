@@ -10,3 +10,7 @@ type CartItem = {
   quantity: number;
   price: number;
 };
+declare interface PaginationProps {
+  page: number;
+  totalPages: number;
+}
