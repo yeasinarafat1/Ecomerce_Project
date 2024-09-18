@@ -6,7 +6,7 @@ import OrangeButton from "./OrangeButton";
 
 const SubscribeToNewsLater = () => {
     return (
-        <div className="flex flex-col gap-5 items-center justify-center  w-full h-[450px] bg-primary mt-0 md:mt-2 lg:mt-5">
+        <div className="flex flex-col gap-5 items-center justify-center  w-full h-[450px] bg-primary mt-0 md:mt-1">
             <p className="text-white text-2xl md:text-3xl font-semibold">
                 Subscribe to our News Later
             </p>
