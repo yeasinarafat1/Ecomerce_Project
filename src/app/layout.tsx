@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "./globals.css";
-import SesionWraper from "@/components/SesionWraper";
 import { Toaster } from "@/components/ui/toaster";
-import { SessionProvider } from "next-auth/react";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const sans = Public_Sans({ subsets: ["latin"] });
 
@@ -27,10 +26,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <SessionProvider>
+        <ClerkProvider>
           {children}
           <Toaster />
-        </SessionProvider>
+        </ClerkProvider>
       </body>
     </html>
   );

@@ -1,9 +1,7 @@
 "use client";
-import { signOut } from "@/auth";
 import { Button } from "@/components/ui/button";
 import { AccountSideBarItem } from "@/constant";
-import { useSignOut } from "@/Hooks/AuthHooks";
-import { signOutAction } from "@/lib/action/createUser";
+import { useSignOutHook } from "@/Hooks/AuthHooks";
 import { cn } from "@/lib/utils";
 import { LogOutIcon } from "lucide-react";
 import Link from "next/link";
@@ -12,7 +10,7 @@ import { Fragment, useState } from "react";
 
 const SideBar = () => {
   const pathname = usePathname();
-  const { loading: signOutLoading, signOut, error } = useSignOut();
+  const { loading: signOutLoading, signout } = useSignOutHook();
   return (
     <div className="hidden md:flex flex-col gap-2 w-72 h-[440px] border border-gray-100 py-4 rounded-md account-siderbar-shadow">
       {AccountSideBarItem.map((item, index) => {
@@ -35,7 +33,7 @@ const SideBar = () => {
       })}
 
       <Button
-        onClick={signOut}
+        onClick={signout}
         className="w-full h-10 flex items-center justify-start gap-3 px-3  text-sm rounded-sm bg-transparent hover:bg-transparent  text-gray-600"
       >
         <LogOutIcon /> {signOutLoading ? "Loging Out..." : "Logout"}

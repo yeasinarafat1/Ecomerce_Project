@@ -1,17 +1,20 @@
 "use client";
 import ProoductCartPopOver from "@/components/ProoductCartPopOver";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useSession } from "next-auth/react";
+import { SignedIn, SignedOut, SignIn, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 const MiddleBar = () => {
   const pathname = usePathname();
-  const session = useSession();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <div className="hidden bg-primary w-full h-[75px] md:flex items-center justify-around">
@@ -29,27 +32,30 @@ const MiddleBar = () => {
           className="absolute right-2 top-3"
         />
       </div>
-
-      {session.status === "authenticated" ? (
-        <div className="flex items-center justify-center gap-2">
-          <ProoductCartPopOver />
-          <Link href={"/whishlist"}>
-            {pathname === "/whishlist" ? (
-              <AiFillHeart className="size-8 text-white" />
-            ) : (
-              <AiOutlineHeart className="size-8 text-white" />
-            )}
-          </Link>
-          <Link href={"/dashboard"}>
-            <Image
-              src={"/asset/icons/User.svg"}
-              alt="User icon"
-              height={32}
-              width={32}
-            />
-          </Link>
-        </div>
-      ) : (
+      {isClient && (
+        <SignedIn>
+          <div className="flex items-center justify-center gap-2">
+            <ProoductCartPopOver />
+            <Link href={"/whishlist"}>
+              {pathname === "/whishlist" ? (
+                <AiFillHeart className="size-8 text-white" />
+              ) : (
+                <AiOutlineHeart className="size-8 text-white" />
+              )}
+            </Link>
+            <Link href={"/dashboard"}>
+              <Image
+                src={"/asset/icons/User.svg"}
+                alt="User icon"
+                height={32}
+                width={32}
+              />
+            </Link>
+            <UserButton />
+          </div>
+        </SignedIn>
+      )}
+      <SignedOut>
         <div className="flex-center gap-2">
           <Link
             href={"/sign-in"}
@@ -64,7 +70,7 @@ const MiddleBar = () => {
             Sign Up
           </Link>
         </div>
-      )}
+      </SignedOut>
     </div>
   );
 };
