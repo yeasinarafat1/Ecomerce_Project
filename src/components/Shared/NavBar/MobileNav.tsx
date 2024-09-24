@@ -11,7 +11,7 @@ const MobileMiddleNav = () => {
         <Link href={"/"} className="flex items-center justify-center gap-2">
           <Image
             className="size-[35px]"
-            src="/asset/icons/logo.svg"
+            src="/asset/icons/Logo.svg"
             alt="Logo"
             height={60}
             width={60}
