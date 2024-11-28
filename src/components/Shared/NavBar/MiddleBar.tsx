@@ -19,7 +19,7 @@ const MiddleBar = () => {
   return (
     <div className="hidden bg-primary w-full h-[75px] md:flex items-center justify-around">
       <Link href={"/"} className="flex items-center justify-center gap-2">
-        <Image src="/asset/icons/logo.svg" alt="Logo" height={48} width={48} />
+        <Image src="/asset/icons/Logo.svg" alt="Logo" height={48} width={48} />
         <p className="text-white font-bold text-2xl">CLICON</p>
       </Link>
       <div className="relative">
