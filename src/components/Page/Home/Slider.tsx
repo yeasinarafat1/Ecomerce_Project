@@ -22,11 +22,11 @@ export default function Slider({
   discount: number;
 }) {
   return (
-    <div className="px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="px-4 md:px-6 lg:px-8 max-w-7xl mx-auto md:py-6">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {/* Content section */}
-        <div className="w-full md:w-[80%] space-y-4 text-center md:text-left">
-          <h3 className="text-[#2484C2] font-semibold text-sm md:text-[14px]">
+        <div className="w-full md:w-[90%] space-y-4 text-center md:text-left">
+          <h3 className="text-primary-500 font-semibold text-sm md:text-lg">
             {title}
           </h3>
 
@@ -34,23 +34,23 @@ export default function Slider({
             {heading}
           </h1>
 
-          <p className="text-[#475156] text-base md:text-[18px] max-w-prose">
+          <p className="text-[#475156] text-base md:text-xl max-w-prose">
             {description}
           </p>
 
           <div className="pt-2">
-            <OrangeButton>Button</OrangeButton>
+            <OrangeButton className="px-6 py-4 text-lg">Button</OrangeButton>
           </div>
         </div>
 
         {/* Image section */}
         <div className="relative w-full md:w-auto">
-          <div className="relative aspect-square md:aspect-auto max-w-[500px] mx-auto">
+          <div className="relative aspect-square md:aspect-auto max-w-[700px] mx-auto">
             <Image
               src={image}
               alt={heading}
-              width={500}
-              height={100}
+              width={700}
+              height={300}
               className="object-contain"
               priority
             />
